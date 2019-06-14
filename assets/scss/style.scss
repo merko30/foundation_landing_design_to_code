@@ -1,0 +1,289 @@
+@import "./variables.scss";
+@import "./reset.scss";
+
+@import "./button.scss";
+
+// modules
+@import "./nav.scss";
+
+.multiline {
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+// header section
+
+.header {
+  background: $bg_pink;
+  min-height: 710px;
+}
+
+// section two
+
+.what-is-it {
+  background: $bg_gray;
+  padding: 3em 0;
+  margin: 0;
+
+  .col {
+    padding: 0 2em;
+  }
+
+  h4 {
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.bird {
+  display: none;
+
+  .title {
+    color: $green;
+  }
+}
+
+.audience,
+.hiring,
+.quotes {
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  section.bird {
+    display: block;
+  }
+
+  .features {
+    display: none;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.features {
+  margin: 5em 0;
+  overflow: hidden;
+
+  span.title {
+    color: $green;
+  }
+
+  .features-side {
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    z-index: -1;
+  }
+
+  .list-item {
+    padding: 1em;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .list-item-subtext {
+      margin: 0.5em 0;
+      flex-basis: 100%;
+    }
+
+    &.active h4 {
+      color: $purple;
+      font-weight: bold;
+    }
+
+    h4 {
+      display: inline-block;
+      margin: 0 0 0 0.5em;
+    }
+  }
+}
+
+// section inbox
+
+.inbox {
+  padding: 5em 0;
+  background: $light_pink;
+
+  span.title {
+    color: $orange;
+  }
+
+  .img-text {
+    margin-left: 10em;
+  }
+
+  .quote {
+    background: white;
+    padding: 1.5em;
+    border-bottom: 4px solid $blue;
+
+    blockquote {
+      line-height: 1.6em;
+      padding-right: 5em;
+      font-size: 1.2em;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0 0 0 1em;
+      }
+
+      small {
+        margin: 0 0 0 1.1em;
+      }
+    }
+  }
+}
+
+.communication {
+  span.title {
+    color: $blue_secondary;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .learn {
+    line-height: 1.7em;
+    font-size: 1.1em;
+
+    .subtext {
+      color: $blue_l;
+    }
+  }
+}
+
+.audience {
+  padding: 5em 1.5em;
+  background: rgba($blue_bg_audience, 0.1);
+
+  span.title {
+    color: #333;
+  }
+
+  .cards {
+    margin: 5em 0;
+
+    .card {
+      font-size: 1.2em;
+      margin: 0.5em;
+      padding: 1.5em 1em;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05),
+        0px 1px 3px rgba(0, 0, 0, 0.1),
+        inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      border: none;
+
+      &:hover {
+        background: $purple;
+        color: white;
+      }
+    }
+  }
+}
+
+// global classes
+.text {
+  font-size: 1.3em;
+}
+
+section.quotes {
+  padding: 2em 1em;
+  border-bottom: 1px solid #ededed;
+
+  h5 {
+    color: $purple;
+    font-weight: bold;
+  }
+
+  p.quote-author {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .dots {
+    display: flex;
+    margin: 2em 0;
+    justify-content: center;
+
+    .dot {
+      background: #ededed;
+      margin: 0 3px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+
+      &.active {
+        background: $purple;
+      }
+    }
+  }
+}
+
+.hiring {
+  padding: 5em 1em;
+
+  h1,
+  h5 {
+    margin: 0;
+  }
+
+  .jobs {
+    margin-top: 4em;
+
+    .job {
+      background: white;
+      max-width: 750px;
+      padding: 2em;
+      color: rgb(77, 77, 77);
+      box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07),
+        0px 13px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+
+      &:hover {
+        color: white;
+        background: $purple;
+      }
+
+      i {
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+.cta {
+  background: $bg_gray;
+  padding: 5em 0;
+
+  input {
+    width: 80%;
+    padding: 0.5em;
+    outline: none;
+    margin-right: 1em;
+  }
+
+  a {
+    color: $purple;
+  }
+}
+
+footer {
+  .text,
+  li,
+  i,
+  a {
+    color: #999;
+  }
+
+  h4 {
+    margin-bottom: 0.5em;
+  }
+}

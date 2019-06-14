@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  .navbar {
+    background: white !important;
+
+    a.nav-link {
+      color: #333 !important;
+    }
+  }
+}
+
+.navbar {
+  background: transparent;
+
+  ul.navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: block;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    margin: 1em;
+    color: black;
+
+    &.active {
+      a.nav-link {
+        font-weight: bold;
+      }
+    }
+
+    a.nav-link {
+      color: black;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 400px;
+    border-radius: 10px;
+  }
+
+  .hover:hover {
+    color: $green;
+    text-decoration: none;
+  }
+}
